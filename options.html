@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+<head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1"><title>Complexity Lens Settings</title><link rel="stylesheet" href="options.css"></head>
+<body>
+  <main class="settings-shell">
+    <div class="eyebrow">COMPLEXITY LENS</div>
+    <h1>Connect your reviewer.</h1>
+    <p class="lede">Connect OpenRouter to enable on-demand complexity analysis inside LeetCode. You can use any OpenRouter-compatible API key.</p>
+    <form id="settings-form">
+      <label for="api-key">OpenRouter API key</label>
+      <div class="key-row"><input id="api-key" type="password" autocomplete="off" placeholder="sk-or-v1-..." required><button id="toggle-key" type="button">Show</button></div>
+      <label for="model">OpenRouter model</label>
+      <input id="model" type="text" autocomplete="off" placeholder="openai/gpt-4.1-mini">
+      <p class="hint">The key is stored locally in this browser and sent only to OpenRouter when you press Analyze. Choose any model available to your OpenRouter account.</p>
+      <button class="save" type="submit">Save key</button><span id="status" role="status"></span>
+    </form>
+    <p class="footnote">Get or manage keys and models at <a href="https://openrouter.ai/keys" target="_blank" rel="noreferrer">OpenRouter</a>.</p>
+  </main>
+  <script src="options.js"></script>
+</body>
+</html>

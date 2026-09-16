@@ -1,0 +1,30 @@
+{
+  "manifest_version": 3,
+  "name": "Complexity Lens for LeetCode",
+  "version": "1.0.0",
+  "description": "Analyze the time and space complexity of your LeetCode solution with OpenRouter.",
+  "icons": {
+    "128": "LEET_insights.png"
+  },
+  "permissions": ["storage"],
+  "host_permissions": ["https://leetcode.com/*", "https://openrouter.ai/*"],
+  "background": {
+    "service_worker": "background.js",
+    "type": "module"
+  },
+  "content_scripts": [
+    {
+      "matches": ["https://leetcode.com/problems/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"],
+      "run_at": "document_idle"
+    }
+  ],
+  "options_page": "options.html",
+  "action": {
+    "default_title": "Complexity Lens settings",
+    "default_icon": {
+      "128": "LEET_insights.png"
+    }
+  }
+}

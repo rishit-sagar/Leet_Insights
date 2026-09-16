@@ -1,0 +1,30 @@
+#complexity-lens-analyze {
+  align-items: center !important;
+  gap: 7px !important;
+  margin-left: 8px !important;
+  border: 1px solid #b8e2d4 !important;
+  background: #e9f8f3 !important;
+  color: #126653 !important;
+  transition: background .18s ease, transform .18s ease !important;
+}
+#complexity-lens-analyze:hover { background: #d2f2e8 !important; transform: translateY(-1px); }
+#complexity-lens-analyze:disabled { opacity: .72; cursor: wait; }
+.complexity-lens-spark { font-size: 16px; line-height: 1; }
+#complexity-lens-dialog { position: fixed; inset: 0; z-index: 2147483647; font-family: Georgia, 'Times New Roman', serif; color: #17322d; }
+.complexity-lens-backdrop { position: absolute; inset: 0; background: rgba(12, 33, 29, .48); backdrop-filter: blur(3px); }
+.complexity-lens-modal { position: relative; width: min(580px, calc(100vw - 32px)); max-height: calc(100vh - 40px); overflow: auto; margin: 20px auto; padding: 34px 36px 38px; background: #f7fbf7; border: 1px solid #c9e2d9; border-radius: 6px; box-shadow: 0 22px 70px rgba(3, 24, 19, .28); animation: complexity-lens-in .2s ease-out; }
+@keyframes complexity-lens-in { from { opacity: 0; transform: translateY(10px) scale(.98); } to { opacity: 1; transform: none; } }
+.complexity-lens-close { position: absolute; top: 13px; right: 16px; border: 0; background: transparent; color: #52736a; font-size: 27px; cursor: pointer; }
+.complexity-lens-kicker, .complexity-lens-label, .complexity-lens-note span { color: #16806a; font: 700 10px/1.2 ui-monospace, SFMono-Regular, Consolas, monospace; letter-spacing: .13em; }
+.complexity-lens-modal h2 { margin: 8px 0 25px; font-size: 30px; font-weight: 500; letter-spacing: 0; }
+.complexity-lens-metrics { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; margin-bottom: 25px; }
+.complexity-lens-metric { padding: 17px 18px; background: #e2f2ec; border-left: 3px solid #259e7e; }
+.complexity-lens-metric span { display: block; margin-bottom: 9px; color: #47776b; font: 700 10px ui-monospace, SFMono-Regular, Consolas, monospace; letter-spacing: .13em; }
+.complexity-lens-metric strong { font: 700 21px/1.25 ui-monospace, SFMono-Regular, Consolas, monospace; color: #0c5d4a; }
+.complexity-lens-section { padding: 17px 0; border-top: 1px solid #d5e7df; }
+.complexity-lens-section p, .complexity-lens-note p { margin: 9px 0 0; font-size: 16px; line-height: 1.55; }
+.complexity-lens-note { margin-top: 18px; padding: 14px 16px; background: #fff4d7; border-left: 3px solid #d49a35; }
+.complexity-lens-note span { color: #a66d16; }
+.complexity-lens-error { padding: 14px 16px; background: #fff0ef; color: #8b302a; line-height: 1.5; }
+.complexity-lens-settings { border: 0; padding: 10px 14px; background: #126653; color: #fff; border-radius: 3px; cursor: pointer; font-weight: 700; }
+@media (max-width: 560px) { .complexity-lens-modal { padding: 29px 22px 28px; } .complexity-lens-metrics { grid-template-columns: 1fr; } .complexity-lens-modal h2 { font-size: 25px; } }

@@ -1,0 +1,124 @@
+:root {
+  color-scheme: light;
+  font-family: Georgia, "Times New Roman", serif;
+  background: #edf5ef;
+  color: #17322d;
+}
+* {
+  box-sizing: border-box;
+}
+body {
+  min-width: 320px;
+  margin: 0;
+  background:
+    radial-gradient(circle at 10% 0%, #d9efe6, transparent 38%), #edf5ef;
+}
+.settings-shell {
+  width: min(620px, calc(100vw - 40px));
+  margin: 12vh auto;
+  padding: 44px 48px;
+  background: #f9fcf8;
+  border: 1px solid #c9e2d9;
+  box-shadow: 0 18px 50px rgba(30, 78, 64, 0.12);
+}
+.eyebrow {
+  color: #16806a;
+  font:
+    700 11px ui-monospace,
+    SFMono-Regular,
+    Consolas,
+    monospace;
+  letter-spacing: 0.14em;
+}
+h1 {
+  margin: 10px 0 12px;
+  font-size: 42px;
+  font-weight: 500;
+}
+.lede {
+  max-width: 490px;
+  margin: 0 0 35px;
+  color: #52736a;
+  font-size: 17px;
+  line-height: 1.5;
+}
+label {
+  display: block;
+  margin-bottom: 9px;
+  font:
+    700 12px ui-monospace,
+    SFMono-Regular,
+    Consolas,
+    monospace;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.key-row {
+  display: flex;
+}
+input {
+  min-width: 0;
+  flex: 1;
+  padding: 13px 14px;
+  border: 1px solid #abcfc1;
+  border-right: 0;
+  background: white;
+  color: #17322d;
+  font:
+    15px ui-monospace,
+    SFMono-Regular,
+    Consolas,
+    monospace;
+}
+input:focus {
+  outline: 2px solid #7cc8ae;
+  outline-offset: -2px;
+}
+#toggle-key {
+  padding: 0 16px;
+  border: 1px solid #abcfc1;
+  background: #e2f2ec;
+  color: #126653;
+  cursor: pointer;
+  font-weight: 700;
+}
+.hint,
+.footnote {
+  color: #6b8980;
+  font-size: 13px;
+  line-height: 1.5;
+}
+.save {
+  margin-top: 13px;
+  padding: 12px 19px;
+  border: 0;
+  border-radius: 3px;
+  background: #126653;
+  color: white;
+  font-weight: 700;
+  cursor: pointer;
+}
+#status {
+  margin-left: 12px;
+  color: #16806a;
+  font:
+    700 12px ui-monospace,
+    SFMono-Regular,
+    Consolas,
+    monospace;
+}
+.footnote {
+  margin-top: 42px;
+}
+a {
+  color: #126653;
+}
+@media (max-width: 500px) {
+  .settings-shell {
+    margin: 5vh auto;
+    padding: 30px 24px;
+  }
+  h1 {
+    font-size: 33px;
+  }
+}
