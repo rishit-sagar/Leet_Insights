@@ -21,5 +21,9 @@ A Manifest V3 Chrome extension that adds an **Analyze** button beside LeetCode's
 4. paste it in the extension dialog box 
 5. Save and enjoy unlimited analysis.
 
+![Alt text](./openrouter.png)
+
+
+![Alt text](./page.png)
 
 The API key is stored in `chrome.storage.local`; it is not embedded in the extension source. OpenRouter usage may incur charges or be subject to the selected provider's limits. The extension asks the model to return worst-case complexity, but no LLM can guarantee a correct answer for every program; review the displayed assumptions and explanation.
